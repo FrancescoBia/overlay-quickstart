@@ -1,36 +1,60 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Overlay Quickstart
 
-## Getting Started
+This repository is a small Next.js sample app for trying the Overlay Studio
+extension in Cursor, VS Code, or Windsurf against a real codebase.
 
-First, run the development server:
+Overlay Studio is a code-first UI design editor that runs inside your editor. It
+lets you inspect and prototype components visually while staying connected to
+the source files in this workspace.
+
+## What to try
+
+- Open the sample app and use the IDE links to install Overlay Studio in Cursor,
+  VS Code, or Windsurf.
+- Use the Overlay icon in the Activity Bar, or run `Overlay: Open Editor` from
+  the Command Palette.
+- Inspect the components registered in `.overlay/components.jsonc`.
+- Change component props visually, then compare the result with the React source.
+
+## Install Overlay Studio
+
+- [Install Overlay Studio in VS Code](vscode:extension/overlay-studio.overlay-studio)
+- [Install Overlay Studio in Cursor](cursor:extension/overlay-studio.overlay-studio)
+- [Install Overlay Studio in Windsurf](windsurf:extension/overlay-studio.overlay-studio)
+
+## Mapped components
+
+Overlay is already configured to recognize these local UI primitives:
+
+| Component | Source | Editable props |
+| --- | --- | --- |
+| `Button` | `components/ui/button.tsx` | `children`, `variant`, `size`, `disabled` |
+| `Badge` | `components/ui/badge.tsx` | `children`, `variant` |
+| `Input` | `components/ui/input.tsx` | `type`, `placeholder`, `disabled` |
+
+The mapping lives in `.overlay/components.jsonc`. Commit that file when you want
+teammates to use the same Overlay component catalog.
+
+## Run the sample app
+
+Install dependencies, then start the Next.js dev server:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
+pnpm install
 pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) to view the sample home
+page while you experiment in Overlay.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Project notes
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- `app/page.tsx` is the main sample surface for extension testing.
+- `components/ui/*` contains the mapped components.
+- `app/globals.css` defines the Tailwind and design-token setup Overlay can
+  scan and reuse.
+- This project uses Next.js `16.2.4`; check `node_modules/next/dist/docs/` for
+  framework-specific guidance before changing app structure or APIs.
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Learn more about Overlay Studio at [overlay.studio](https://overlay.studio).
+Read the docs at [docs.overlay.studio](https://docs.overlay.studio).
