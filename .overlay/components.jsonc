@@ -1,0 +1,87 @@
+// File generated with Overlay Studio, a code-first UI design editor.
+// Learn more: https://overlay.studio
+
+// Note: you can commit this file to the repo if you want to collaborate
+// with others (and share Overlay component mappings).
+// If not, add `.overlay` to your `.gitignore` file.
+{
+  "components": [
+    {
+      "source": "components/ui/button.tsx",
+      "export": "Button",
+      "props": {
+        "children": {
+          "type": "string",
+          "default": "Button"
+        },
+        "variant": {
+          "type": "string",
+          "enum": [
+            "default",
+            "destructive",
+            "outline",
+            "secondary",
+            "ghost",
+            "link"
+          ]
+        },
+        "size": {
+          "type": "string",
+          "enum": [
+            "default",
+            "sm",
+            "lg",
+            "icon"
+          ]
+        },
+        "disabled": {
+          "type": "boolean"
+        }
+      }
+    },
+    {
+      "source": "components/ui/badge.tsx",
+      "export": "Badge",
+      "props": {
+        "children": {
+          "type": "string",
+          "default": "Badge"
+        },
+        "variant": {
+          "type": "string",
+          "enum": [
+            "default",
+            "secondary",
+            "destructive",
+            "outline"
+          ]
+        }
+      }
+    },
+    {
+      "source": "components/ui/input.tsx",
+      "export": "Input",
+      "props": {
+        "type": {
+          "type": "string",
+          "enum": [
+            "text",
+            "password",
+            "email",
+            "number",
+            "tel",
+            "url",
+            "search"
+          ]
+        },
+        "placeholder": {
+          "type": "string",
+          "default": "Type here..."
+        },
+        "disabled": {
+          "type": "boolean"
+        }
+      }
+    }
+  ]
+}
