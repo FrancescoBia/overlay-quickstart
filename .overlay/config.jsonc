@@ -5,10 +5,7 @@
 // If not, add `.overlay` to your `.gitignore` file
 {
   "version": 1,
-
-  // CSS files used to import tokens into the editor.
-  // Use object entries to include/exclude specific variable names or selectors.
-  "tokenFiles": [
+  "cssFiles": [
     "./app/globals.css"
   ]
 }
