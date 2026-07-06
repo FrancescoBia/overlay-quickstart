@@ -5,7 +5,21 @@
 // If not, add `.overlay` to your `.gitignore` file
 {
   "version": 1,
-  "cssFiles": [
-    "./app/globals.css"
-  ]
+  "cssFiles": ["./app/globals.css"],
+  // Fonts detected in your project (e.g. from next/font/google),
+  // offered in the editor's font picker. Auto-updated on scan.
+  "fonts": [
+    {
+      "family": "Figtree",
+      "cssVariable": "--font-sans",
+    },
+    {
+      "family": "Geist",
+      "cssVariable": "--font-geist-sans",
+    },
+    {
+      "family": "Geist Mono",
+      "cssVariable": "--font-geist-mono",
+    },
+  ],
 }
