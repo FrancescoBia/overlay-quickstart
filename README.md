@@ -26,11 +26,11 @@ the source files in this workspace.
 
 Overlay is already configured to recognize these local UI primitives:
 
-| Component | Source | Editable props |
-| --- | --- | --- |
-| `Button` | `components/ui/button.tsx` | `children`, `variant`, `size`, `disabled` |
-| `Badge` | `components/ui/badge.tsx` | `children`, `variant` |
-| `Input` | `components/ui/input.tsx` | `type`, `placeholder`, `disabled` |
+| Component | Source                     | Editable props                            |
+| --------- | -------------------------- | ----------------------------------------- |
+| `Button`  | `components/ui/button.tsx` | `children`, `variant`, `size`, `disabled` |
+| `Badge`   | `components/ui/badge.tsx`  | `children`, `variant`                     |
+| `Input`   | `components/ui/input.tsx`  | `type`, `placeholder`, `disabled`         |
 
 The mapping lives in `.overlay/components.jsonc`. Commit that file when you want
 teammates to use the same Overlay component catalog.

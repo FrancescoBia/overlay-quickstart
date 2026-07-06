@@ -27,12 +27,7 @@
         },
         "size": {
           "type": "string",
-          "enum": [
-            "default",
-            "sm",
-            "lg",
-            "icon"
-          ]
+          "enum": ["default", "sm", "lg", "icon"]
         },
         "disabled": {
           "type": "boolean"
@@ -49,12 +44,7 @@
         },
         "variant": {
           "type": "string",
-          "enum": [
-            "default",
-            "secondary",
-            "destructive",
-            "outline"
-          ]
+          "enum": ["default", "secondary", "destructive", "outline"]
         }
       }
     },

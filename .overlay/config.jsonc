@@ -11,15 +11,15 @@
   "fonts": [
     {
       "family": "Figtree",
-      "cssVariable": "--font-sans",
+      "cssVariable": "--font-sans"
     },
     {
       "family": "Geist",
-      "cssVariable": "--font-geist-sans",
+      "cssVariable": "--font-geist-sans"
     },
     {
       "family": "Geist Mono",
-      "cssVariable": "--font-geist-mono",
-    },
-  ],
+      "cssVariable": "--font-geist-mono"
+    }
+  ]
 }
